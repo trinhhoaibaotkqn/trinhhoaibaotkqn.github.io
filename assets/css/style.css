@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    position: relative;
+    background-image: url('/assets/image/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    opacity: 90%;
+    z-index: 0;
+}
+
+.end{
+    background-image: url('/assets/image/background-end.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    opacity: 90%;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+}
+.end h1{
+    text-align: center;
+    color: #FF6666;
+}
+
+#question{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#question h1{
+    color: #FF99FF;
+}
+
+#btn-accept{
+    position: absolute;
+    background-color: #FF6699;
+    font-size: large;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(30%);
+}
+
+#btn-refuse{
+    position: absolute;
+    background-color: #99CC99;
+    font-size: large;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    top: 50%;
+    right: 50%;
+    transform: translateX(-30%);
+}
+
+.modal-container{
+    /* display: none; */
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal{
+    background-image: url('/assets/image/background_question.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 100px;
+    border-radius: 10px;
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.modal h2{
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.modal input{
+    width: 500px;
+    max-width: 90%;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+.modal #btn-sent{
+    background-color: #99CC99;
+    font-size: large;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin-top: 10px;
+}
